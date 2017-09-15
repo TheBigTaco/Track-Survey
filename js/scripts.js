@@ -1,4 +1,13 @@
 $(document).ready(function(){
+  /*This stops people from pressing enter and getting results before they've answered the questions. They have to click the buttons. I don't know how it works, but it does... so I'm just not going to touch it. I was trying to get enter to work for one button at a time but this works too?*/
+
+  //keycode 13 = enter
+  $("#name").keyup(function(event){
+    if(event.keyCode === 13){
+      $("button#bName").click();
+    }
+  });
+  //Switches questions by slideToggle animation.
   $("button#bName").click(function(){
     $("#qOne").slideToggle();
     $("#qName").slideToggle();
@@ -19,6 +28,7 @@ $(document).ready(function(){
     $("#qFour").slideToggle();
     $("#qFive").slideToggle();
   });
+  //Submits all values and toggles to results.
   $("form#track").submit(function(event){
     $("#qFive").slideToggle();
     $("#title").slideToggle();
