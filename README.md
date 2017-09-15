@@ -29,6 +29,6 @@ _This was made using Atom, gitbash, jQuery-3.2.1, and Bootstrap v3.3.7_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*This is licensed under the MIT license*
 
 Copyright (c) 2016 **_Adam Titus_**
