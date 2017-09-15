@@ -9,11 +9,14 @@
   </head>
   <body>
     <div class="container">
-      <h1>Which Epicodus Track Should You Pursue?</h1>
-      <form action="index.html" method="post">
-        <label for="name">What is your name?</label>
-        <input id="name" type="text" class="form-group">
-
+      <h1 id="final">You should join:</h1>
+      <h1 id="title">Which Epicodus Track Should You Pursue?</h1>
+      <form id="track" action="index.html" method="post">
+        <div id="qName">
+          <label for="name">What is your name?</label>
+          <input id="name" type="text" class="form-group">
+          <button id="bName" type="button">Next Question</button>
+        </div>
         <div id="qOne">
         <!--Question One-->
           <h1>What kind of business are you interested in working in?</h1>
@@ -164,7 +167,9 @@
           <button id="bFive" type="submit">Submit</button>
         </div>
       </form>
-      <p>1C# 2Java 3CSS 4Ruby</p>
+      <p>1C# 2Java 3CSS 4Ruby 11243 for c#</p>
+      <p id="cSharp">You should be in c#</p>
     </div>
   </body>
+  <!--To get C# do options 11243, to get Java 23312, CSS 32421, Ruby 44134-->
 </html>
