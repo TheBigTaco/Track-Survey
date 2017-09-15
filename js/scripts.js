@@ -29,10 +29,26 @@ $(document).ready(function(){
     var place = parseInt($("input:radio[name=place]:checked").val());
     var reason = parseInt($("input:radio[name=reason]:checked").val());
     var exp = parseInt($("input:radio[name=exp]:checked").val());
-    var result = work + think + place + reason + exp;
+//Check if they selected any same value 3 times or more
+    var checkOne = work + think + place;
+    var checkTwo = work + think + reason;
+    var checkThree = work + think + exp;
+    var checkFour = think + place + reason;
+    var checkFive = think + place + exp;
+    var checkSix = place + reason + exp;
 
-    if (result >= 5 && result <== 11) {
-      //$("#cSharp").show();
+    var result = work + think + place + reason + exp;
+//check if they chose value 1 or 4, 3 or more times,
+    if (checkOne === 3 || checkTwo === 3 || checkThree === 3 || checkFour === 3 || checkFive === 3 || checkSix === 3) {
+      $("#cSharp").show();
+    } else if (checkOne === 12 || checkTwo === 12 || checkThree === 12 || checkFour === 12 || checkFive === 12 || checkSix === 12) {
+      $("#rwby").show();
+//check all options where they could select value 2 or 3, 3 or more times
+//Logic not sound, they overlap
+    } else if (result >= 8 && result <=14) {
+      $("#java").show();
+    } else {
+      $("#ceeSS").show();
     }
   });
 });
