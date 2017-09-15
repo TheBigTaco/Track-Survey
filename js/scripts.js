@@ -7,6 +7,31 @@ $(document).ready(function(){
       $("button#bName").click();
     }
   });
+  $(".hope").keyup(function(event){
+    if(event.keyCode === 13){
+      $("button#bOne").click();
+    }
+  });
+  $(".this").keyup(function(event){
+    if(event.keyCode === 13){
+      $("button#bTwo").click();
+    }
+  });
+  $(".works").keyup(function(event){
+    if(event.keyCode === 13){
+      $("button#bThree").click();
+    }
+  });
+  $(".pretty").keyup(function(event){
+    if(event.keyCode === 13){
+      $("button#bFour").click();
+    }
+  });
+  $(".please").keyup(function(event){
+    if(event.keyCode === 13){
+      $("button#bFive").click();
+    }
+  });
   //Switches questions by slideToggle animation.
   $("button#bName").click(function(){
     $("#qOne").slideToggle();
