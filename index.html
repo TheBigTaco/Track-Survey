@@ -1,10 +1,100 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Which Track Should You Pursue?</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Which Epicodus Track Should You Pursue?</h1>
+      <form action="index.html" method="post">
+        <label for="name">What is your name?</label>
+        <input id="name" type="text" class="form-group">
 
+        <!--Question One-->
+        <h1>What kind of business are you interested in working in?</h1>
+        <div class="radio">
+          <label>
+            <input type="radio" name="work" value="1">
+            Business software.1
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="work" value="2">
+            Mobile app development2
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="work" value="3">
+            Webpage design and aesthetic3
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="work" value="4">
+            Interactive web applications4
+          </label>
+        </div>
+
+        <!--Question Two-->
+        <h1>What kind of coding do you enjoy?</h1>
+        <div class="radio">
+          <label>
+            <input type="radio" name="think" value="1">
+            Logic based1
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="think" value="3">
+            Aesthetic based3
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="think" value="2">
+            A mix of both but leaning towards logic2
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="think" value="4">
+            A mix of both but leaning towards Aesthetic4
+          </label>
+        </div>
+
+        <!--Question Three-->
+        <h1>What environment are you looking to working in?</h1>
+        <div class="radio">
+          <label>
+            <input type="radio" name="place" value="4">
+            A small startup4
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="place" value="1">
+            A big business1
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="place" value="2">
+            A small established company2
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="place" value="3">
+            From home (Freelance)3
+          </label>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
