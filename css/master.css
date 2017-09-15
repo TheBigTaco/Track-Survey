@@ -4,7 +4,38 @@
 
 #final, #title, #track {
   text-align: center;
+  font-size: 18px;
 }
-#track {
-  
+.questions {
+  font-size: 30px;
+  font-family: serif;
+  border: solid black;
+  background-color: #c6ecff;
+}
+
+#final, #title {
+  font-weight: bold;
+  font-size: 50px;
+  font-family: monospace;
+  border: solid black;
+  background-color: #fffef2;
+}
+
+img.rwby, img.ceeSS, img.cSharp, img.java {
+  width: 33%;
+  height: 33%;
+  margin: 33%;
+  margin-top: 20%;
+}
+
+.cSharp, .java, .ceeSS, .rwby {
+  font-size: 25px;
+}
+
+body {
+  background-color: #b6a0ff;
+}
+
+.panel {
+  background-color: #e9f9ff;
 }

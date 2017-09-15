@@ -9,172 +9,182 @@
   </head>
   <body>
     <div class="container">
-      <h1 id="final">You should join:</h1>
-      <h1 id="title">Which Epicodus Track Should You Pursue?</h1>
-      <form id="track" action="index.html" method="post">
-        <div id="qName">
-          <label for="name">What is your name?</label>
-          <input id="name" type="text" class="form-group">
-          <button id="bName" type="button">Next Question</button>
+      <div class="panel panel-default">
+        <div class="panel-head">
+          <h1 id="final">You should join:</h1>
+          <h1 id="title">Which Epicodus Track Should You Pursue?</h1>
         </div>
-        <div id="qOne">
-        <!--Question One-->
-          <h1>What kind of business are you interested in working in?</h1>
-          <div class="radio">
-            <label>
-              <input type="radio" name="work" value="1">
-              Business software
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="work" value="2">
-              Mobile app development
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="work" value="3">
-              Webpage design and aesthetic
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="work" value="4">
-              Interactive web applications
-            </label>
-          </div>
-          <button id="bOne" type="button">Next Question</button>
-        </div>
+        <div class="panel-body">
+          <form id="track" action="index.html" method="post">
+            <div id="qName">
+              <label for="name">What is your name?</label>
+              <input id="name" type="text" class="form-group">
+              <button id="bName" type="button">Next Question</button>
+            </div>
+            <div id="qOne">
+            <!--Question One-->
+              <h1 class="questions">What kind of business are you interested in working in?</h1>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="work" value="1">
+                  Business software
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="work" value="2">
+                  Mobile app development
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="work" value="3">
+                  Webpage design and aesthetic
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="work" value="4">
+                  Interactive web applications
+                </label>
+              </div>
+              <button id="bOne" type="button">Next Question</button>
+            </div>
 
-        <div id="qTwo">
-        <!--Question Two-->
-          <h1>What kind of coding do you enjoy?</h1>
-          <div class="radio">
-            <label>
-              <input type="radio" name="think" value="1">
-              Logic based
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="think" value="3">
-              Aesthetic based
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="think" value="2">
-              A mix of both but leaning towards logic
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="think" value="4">
-              A mix of both but leaning towards Aesthetic
-            </label>
-          </div>
-          <button id="bTwo" type="button">Next Question</button>
-        </div>
+            <div id="qTwo">
+            <!--Question Two-->
+              <h1 class="questions">What kind of coding do you enjoy?</h1>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="think" value="1">
+                  Logic based
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="think" value="3">
+                  Aesthetic based
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="think" value="2">
+                  A mix of both but leaning towards logic
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="think" value="4">
+                  A mix of both but leaning towards Aesthetic
+                </label>
+              </div>
+              <button id="bTwo" type="button">Next Question</button>
+            </div>
 
-        <div id="qThree">
-        <!--Question Three-->
-          <h1>What environment are you looking to working in?</h1>
-          <div class="radio">
-            <label>
-              <input type="radio" name="place" value="4">
-              A small startup
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="place" value="1">
-              A big business
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="place" value="2">
-              A small established company
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="place" value="3">
-              From home (Freelance)
-            </label>
-          </div>
-          <button id="bThree" type="button">Next Question</button>
-        </div>
+            <div id="qThree">
+            <!--Question Three-->
+              <h1 class="questions">What environment are you looking to working in?</h1>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="place" value="4">
+                  A small startup
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="place" value="1">
+                  A big business
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="place" value="2">
+                  A small established company
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="place" value="3">
+                  From home (Freelance)
+                </label>
+              </div>
+              <button id="bThree" type="button">Next Question</button>
+            </div>
 
-        <div id="qFour">
-        <!--Question Four-->
-          <h1>Why are you trying to enter this business?</h1>
-          <div class="radio">
-            <label>
-              <input type="radio" name="reason" value="2">
-              For the money
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="reason" value="3">
-              I enjoy making things
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="reason" value="4">
-              I want to build applications to help people
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="reason" value="1">
-              I enjoy problem solving
-            </label>
-          </div>
-          <button id="bFour" type="button">Next Question</button>
-        </div>
+            <div id="qFour">
+            <!--Question Four-->
+              <h1 class="questions">Why are you trying to enter this business?</h1>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="reason" value="2">
+                  For the money
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="reason" value="3">
+                  I enjoy making things
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="reason" value="4">
+                  I want to build applications to help people
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="reason" value="1">
+                  I enjoy problem solving
+                </label>
+              </div>
+              <button id="bFour" type="button">Next Question</button>
+            </div>
 
-        <div id="qFive">
-        <!--Question Five-->
-          <h1>How much previous coding experience do you have?</h1>
-          <div class="radio">
-            <label>
-              <input type="radio" name="exp" value="3">
-              None at all
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="exp" value="2">
-              Very little
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="exp" value="1">
-              Took some classes
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="exp" value="4">
-              Made webpages or applications before
-            </label>
-          </div>
-          <button id="bFive" type="submit">Submit</button>
+            <div id="qFive">
+            <!--Question Five-->
+              <h1 class="questions">How much previous coding experience do you have?</h1>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="exp" value="3">
+                  None at all
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="exp" value="2">
+                  Very little
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="exp" value="1">
+                  Took some classes
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="exp" value="4">
+                  Made webpages or applications before
+                </label>
+              </div>
+              <button id="bFive" type="submit">Submit</button>
+            </div>
+          </form>
+          <h3 class="cSharp"><span class="name"></span> you should join the C#/.Net track!</h3>
+          <p class="cSharp">The C# ("C sharp") programming language is most commonly used with the .NET framework. Students who are well-versed in C# programming can use it to create client applications, database applications, distributed components, and much more. Students who learn C# programming and combine it with their knowledge of the .NET framework can target larger enterprises, government agencies, and companies serving enterprise and government clients for employment. </p>
+          <img class="cSharp" src="img/c2.png" alt="The C Sharp programming language logo">
+          <h3 class="java"><span class="name"></span> you should join the Java/Android track!</h3>
+          <p class="java">Java is arguably the most popular programming language today. It's used for everything from web applications to backend services to mobile applications to embedded systems. Students who learn Java programming will be able to create dynamic web applications, and be able continue into our Android track.</p>
+          <img class="java" src="img/java.png" alt="The Java programming language logo">
+          <h3 class="ceeSS"><span class="name"></span> you should join the CSS/Design track!</h3>
+          <p class="ceeSS">CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.</p>
+          <img class="ceeSS" src="img/css2.png" alt="A graphic depicting css affiliated items">
+          <h3 class="rwby"><span class="name"></span> you should join the Ruby/Rails track!</h3>
+          <p class="rwby">Ruby is a programming language focused on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. The Ruby programming language is most commonly used with the Ruby on Rails framework. Ruby and Rails are typically used by younger companies and startups, especially for building interactive web applications. </p>
+          <img class="rwby" src="img/ruby.png" alt="The ruby programming language logo">
         </div>
-      </form>
-      <p class="cSharp"><span class="name"></span> you should join the C#/.Net track!</p>
-      <p class="cSharp">The C# ("C sharp") programming language is most commonly used with the .NET framework. Students who are well-versed in C# programming can use it to create client applications, database applications, distributed components, and much more. Students who learn C# programming and combine it with their knowledge of the .NET framework can target larger enterprises, government agencies, and companies serving enterprise and government clients for employment. </p>
-      <p class="java"><span class="name"></span> you should join the Java/Android track!</p>
-      <p class="java">Java is arguably the most popular programming language today. It's used for everything from web applications to backend services to mobile applications to embedded systems. Students who learn Java programming will be able to create dynamic web applications, and be able continue into our Android track.</p>
-      <p class="ceeSS"><span class="name"></span> you should join the CSS/Design track!</p>
-      <p class="ceeSS">CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.</p>
-      <p class="rwby"><span class="name"></span> you should join the Ruby/Rails track!</p>
-      <p class="rwby">Ruby is a programming language focused on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. The Ruby programming language is most commonly used with the Ruby on Rails framework. Ruby and Rails are typically used by younger companies and startups, especially for building interactive web applications. </p>
+      </div>
     </div>
   </body>
   <!--To get C# do options 11243, to get Java 23312, CSS 32421, Ruby 44134-->
