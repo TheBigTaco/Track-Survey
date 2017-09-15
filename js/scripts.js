@@ -29,7 +29,8 @@ $(document).ready(function(){
     var place = parseInt($("input:radio[name=place]:checked").val());
     var reason = parseInt($("input:radio[name=reason]:checked").val());
     var exp = parseInt($("input:radio[name=exp]:checked").val());
-//Check if they selected any same value 3 times or more
+    var name = $("input#name").val();
+//Check if they selected any same value 3 times or more.
     var checkOne = work + think + place;
     var checkTwo = work + think + reason;
     var checkThree = work + think + exp;
@@ -38,17 +39,21 @@ $(document).ready(function(){
     var checkSix = place + reason + exp;
 
     var result = work + think + place + reason + exp;
-//check if they chose value 1 or 4, 3 or more times,
+//Check if they chose value 1 or 4, 3 times.
     if (checkOne === 3 || checkTwo === 3 || checkThree === 3 || checkFour === 3 || checkFive === 3 || checkSix === 3) {
-      $("#cSharp").show();
+      $(".cSharp").show();
+      $(".name").text(name)
     } else if (checkOne === 12 || checkTwo === 12 || checkThree === 12 || checkFour === 12 || checkFive === 12 || checkSix === 12) {
-      $("#rwby").show();
-//check all options where they could select value 2 or 3, 3 or more times
-//Logic not sound, they overlap
+      $(".rwby").show();
+      $(".name").text(name)
+//Check all options where they could select value 2 or 3, 3 or more times.
+//Logic not sound, they overlap.
     } else if (result >= 8 && result <=14) {
-      $("#java").show();
+      $(".java").show();
+      $(".name").text(name)
     } else {
-      $("#ceeSS").show();
+      $(".ceeSS").show();
+      $(".name").text(name)
     }
   });
 });

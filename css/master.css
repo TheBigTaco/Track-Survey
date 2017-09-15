@@ -1,3 +1,10 @@
-#qOne, #qTwo, #qThree, #qFour, #qFive, #final, #cSharp, #java, #ceeSS, #rwby {
+#qOne, #qTwo, #qThree, #qFour, #qFive, #final, .cSharp, .java, .ceeSS, .rwby {
   display: none;
+}
+
+#final, #title, #track {
+  text-align: center;
+}
+#track {
+  
 }
